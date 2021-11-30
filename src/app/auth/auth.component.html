@@ -1,0 +1,39 @@
+<ng-template appPlaceholder></ng-template>
+<div class="row justify-content-center mt-12">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="card shadow">
+        <div class="card-title text-center border-bottom">
+          <h2 class="p-3">{{ isLoginMode ? 'Welcome back!' : 'Sign Up'}} 🍔</h2>
+        </div>
+        <div class="card-body">
+            <!-- <div class="alert alert-danger text-center" *ngIf="error">
+                <p>{{error}}</p>
+            </div> -->
+            <app-alert [message]="error" *ngIf="error" (close)="onHandleError()"></app-alert>
+            <div *ngIf="isLoading" class="text-center">
+                <app-loading-spinner></app-loading-spinner>
+            </div>
+          <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
+            <div class="mb-4 text-center">
+              <label for="username" class="form-label">Email</label>
+              <input type="email" class="form-control" id="username" name="email" ngModel required email/>
+            </div>
+            <div class="mb-4 text-center">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" ngModel required minlength="6" autocomplete="on"/>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success btn-block" [disabled]="!authForm.valid">{{ isLoginMode ? 'Login' : 'Sign Up'}}</button>
+            </div>
+            <hr>
+            <div class="d-grid text-center" *ngIf="isLoginMode">
+                <p> Don't have an account? <span><a class="link" (click)="onSwitchMode()" style="cursor: pointer;">Sign Up</a></span></p>
+            </div>
+            <div class="d-grid text-center" *ngIf="!isLoginMode">
+                <p> Already have an account? <span><a class="link" (click)="onSwitchMode()" style="cursor: pointer;">Login</a></span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

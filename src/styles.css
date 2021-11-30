@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color:#fafafc ;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  font-weight: 100;
+  font-weight: bold;
+
+}
+h1{
+  font-weight: 500;
+}
+
+input{
+  border: 3px solid #000;
+  border-radius: 5px;
+  height: 50px;
+  line-height: normal;
+  color: #282828;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+
+
+}
+
+input:focus{
+  border: 3px solid #5551ff;
+}
+
