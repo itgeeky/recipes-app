@@ -1,7 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Variables */
+:root{
+  --hue-color: 250;
+
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-green{
+  background-color:hsl(142, 69%, 61%) !important;
+}
+
+
+.bg-red{
+  background-color:hsl(358, 69%, 61%) !important;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
 body{
   background-color:#fafafc ;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 p{
   font-weight: 100;
@@ -33,3 +69,20 @@ input:focus{
   border: 3px solid #5551ff;
 }
 
+/* scroll bar  */
+
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--first-color-second)
+}

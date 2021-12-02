@@ -1,11 +1,10 @@
 .shop-list{
   align-items: center;
   width: 90vw;
-  height: auto;
-  margin-bottom: 2rem;
+  background-color: #FFF;
   border-radius: 1rem;
-  box-shadow: 10px -8px 0px rgb(255 221 0);
-  background-color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   padding-top: 10px;
   padding-bottom: 10px;
   border:  solid 1px #cdcbd6;

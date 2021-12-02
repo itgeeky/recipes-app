@@ -23,7 +23,7 @@
               <input type="password" class="form-control" id="password" name="password" ngModel required minlength="6" autocomplete="on"/>
             </div>
             <div class="d-grid">
-              <button type="submit" class="btn btn-success btn-block" [disabled]="!authForm.valid">{{ isLoginMode ? 'Login' : 'Sign Up'}}</button>
+              <button type="submit" class="btn bg-green" [disabled]="!authForm.valid">{{ isLoginMode ? 'Login' : 'Sign Up'}}</button>
             </div>
             <hr>
             <div class="d-grid text-center" *ngIf="isLoginMode">

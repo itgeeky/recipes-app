@@ -1,10 +1,8 @@
 .recipe-detail{
-  background-color: white;
-  margin-bottom: 2rem;
+  background-color: #FFF;
   border-radius: 1rem;
-  box-shadow: 10px -8px 0px rgb(255 221 0);
-  border: solid 1px #cdcbd6;
-  padding-bottom: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 }
 
 .list-group-item{
@@ -50,8 +48,4 @@ p{
   margin-right: 1rem;
 }
 
-.btn{
-  background-color: #fd0;
-  border-radius: 50px;
-}
 

@@ -3,8 +3,8 @@
       <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()" autocomplete="off">
           <div class="row ">
               <div class="col-xs-12 d-flex justify-content-center" >
-                  <button type="submit" class="btn btn-success col-5" [disabled]="!recipeForm.valid">Save</button>
-                  <button type="button" class="btn btn-danger col-5" (click)="onCancel()">Cancel</button>
+                  <button type="submit" class="btn bg-green col-5" [disabled]="!recipeForm.valid">Save</button>
+                  <button type="button" class="btn  bg-red col-5" (click)="onCancel()">Cancel</button>
               </div>
           </div>
           <div class="row">
@@ -64,7 +64,7 @@
                   </div>
                   <div class="row">
                       <div class="col-xs-12 bottom">
-                          <button type="button" class="btn btn-success col-11" (click)="onAddIngredient()">Add Ingredient</button>
+                          <button type="button" class="btn  col-11" (click)="onAddIngredient()">Add Ingredient</button>
                       </div>
                   </div>
               </div>
